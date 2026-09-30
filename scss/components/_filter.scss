@@ -1,4 +1,5 @@
 @use "../variables";
+@use "../mixins";
 
 .filters {
   padding: variables.$space;
@@ -43,5 +44,21 @@
     &:hover {
       background-color: variables.$accent;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    align-self: stretch;
+  }
+
+  .filter-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: variables.$space * 0.5;
+  }
+
+  .filter {
+    width: auto;
   }
 }
