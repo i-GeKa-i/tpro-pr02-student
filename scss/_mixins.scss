@@ -1,0 +1,15 @@
+@use "variables";
+
+@mixin badge($bg-color: variables.$background, $text-color: variables.$text-muted) {
+  display: inline-flex;
+  align-items: center;
+  padding: variables.$space * 0.25 variables.$space * 0.75;
+  border-radius: calc(variables.$radius / 2);
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}

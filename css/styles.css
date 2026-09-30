@@ -153,12 +153,21 @@ button {
   font-weight: 600;
 }
 .card__category {
-  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 7px;
+  background-color: #f5f7fb;
   color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.025em;
+  align-self: flex-start;
 }
 .card__price {
+  margin-top: auto;
   font-size: 1.25rem;
   font-weight: bold;
   color: #315efb;
@@ -208,6 +217,33 @@ button {
 }
 .filter--active:hover {
   background-color: #315efb;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 7px;
+  background-color: #f5f7fb;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+.badge--accent {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 7px;
+  background-color: #315efb;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
 }
 
 /*# sourceMappingURL=styles.css.map */

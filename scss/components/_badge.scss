@@ -1,1 +1,10 @@
 @use "../variables";
+@use "../mixins";
+
+.badge {
+  @include mixins.badge();
+
+  &--accent {
+    @include mixins.badge(variables.$accent, variables.$surface);
+  }
+}
