@@ -1,0 +1,52 @@
+@use "variables";
+
+.site-header {
+  padding: variables.$space variables.$space * 1.5;
+  background-color: variables.$surface;
+  box-shadow: variables.$shadow;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: variables.$space * 0.5;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: variables.$text;
+}
+
+.logo__icon {
+  font-size: 1.5rem;
+}
+
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: variables.$space * 1.5;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: variables.$space * 1.5;
+}
+
+.hero {
+  grid-column: 1 / -1;
+  padding: variables.$space * 2;
+  background-color: variables.$surface;
+  border-radius: variables.$radius;
+  box-shadow: variables.$shadow;
+}
+
+.site-footer {
+  grid-column: 1 / -1;
+  margin-top: variables.$space * 2;
+  padding: variables.$space;
+  text-align: center;
+  background-color: variables.$surface;
+  border-radius: variables.$radius;
+}
+
+@media (max-width: 768px) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+}
