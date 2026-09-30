@@ -14,11 +14,12 @@
   }
 
   &__image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    background-color: variables.$background;
-  }
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;     // ← было cover, стало contain
+  padding: variables.$space * 0.5;  // ← небольшой отступ, чтобы не прилипала
+  background-color: variables.$background;
+}
 
   &__content {
     display: flex;

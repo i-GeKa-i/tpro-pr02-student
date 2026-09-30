@@ -138,7 +138,8 @@ button {
 .card__image {
   width: 100%;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 8px;
   background-color: #f5f7fb;
 }
 .card__content {
