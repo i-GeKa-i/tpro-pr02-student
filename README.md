@@ -1,4 +1,3 @@
-```markdown
 # Каталог учебной библиотеки
 
 Практическая работа №2 по дисциплине «Технологии разработки программного обеспечения».
@@ -18,7 +17,7 @@
 
 ## Структура проекта
 
-```
+
 tpro-pr02-student/
 ├── css/
 │   └── styles.css                 # Скомпилированный CSS
@@ -43,7 +42,7 @@ tpro-pr02-student/
 ├── package.json
 ├── .gitignore
 └── README.md
-```
+
 
 ## Требования к окружению
 
@@ -103,4 +102,3 @@ npm run watch
 - Данные предоставлены в рамках учебного задания.
 - HTMLBook — https://htmlbook.ru
 - Документация Sass — https://sass-lang.com/documentation
-```
