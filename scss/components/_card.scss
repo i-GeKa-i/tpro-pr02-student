@@ -1,0 +1,52 @@
+@use "../variables";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: variables.$surface;
+  border-radius: variables.$radius;
+  box-shadow: variables.$shadow;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-color: variables.$background;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$space * 0.5;
+    padding: variables.$space;
+  }
+
+  &__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  &__category {
+    font-size: 0.875rem;
+    color: variables.$text-muted;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+  }
+
+  &__price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: variables.$accent;
+  }
+
+  &__rating {
+    font-size: 0.875rem;
+    color: #f59e0b;
+  }
+}

@@ -1,0 +1,47 @@
+@use "../variables";
+
+.filters {
+  padding: variables.$space;
+  background-color: variables.$surface;
+  border-radius: variables.$radius;
+  box-shadow: variables.$shadow;
+  align-self: start;
+
+  h2 {
+    margin-bottom: variables.$space;
+  }
+}
+
+.filter-list {
+  display: flex;
+  flex-direction: column;
+  gap: variables.$space * 0.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter {
+  width: 100%;
+  padding: variables.$space * 0.5 variables.$space;
+  text-align: left;
+  background-color: transparent;
+  color: variables.$text;
+  border: 1px solid transparent;
+  border-radius: calc(variables.$radius / 2);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    background-color: variables.$background;
+  }
+
+  &--active {
+    background-color: variables.$accent;
+    color: variables.$surface;
+    border-color: variables.$accent;
+
+    &:hover {
+      background-color: variables.$accent;
+    }
+  }
+}
