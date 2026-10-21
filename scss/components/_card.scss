@@ -17,8 +17,8 @@
   &__image {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: contain;     // ← было cover, стало contain
-  padding: variables.$space * 0.5;  // ← небольшой отступ, чтобы не прилипала
+  object-fit: contain;     
+  padding: variables.$space * 0.5;  
   background-color: variables.$background;
 }
 
