@@ -53,7 +53,6 @@
   border-radius: variables.$radius;
 }
 
-// Первая точка: планшеты
 @media (max-width: 768px) {
   .catalog-layout {
     grid-template-columns: 1fr;
